@@ -11,84 +11,7 @@ public final class RobotMap {
 	
 	public final int ENCODER_PPR;
 	
-	//======================Elevator Constants=====================
-	/**
-	 * Channel for the elevator's top limit switch.
-	 */
-	public final int ELEVATOR_TOP_LIMIT;
-	
-	/**
-	 * Channel for the elevator's bottom limit switch.
-	 */
-	public final int ELEVATOR_BOTTOM_LIMIT;
-	
-	/**
-	 * Channel for the elevator's left limit switch.
-	 */
-	public final int ELEVATOR_LEFT_LIMIT;
-	
-	/**
-	 * Channel for the elevator's right limit switch.
-	 */
-	public final int ELEVATOR_RIGHT_LIMIT;
-	
-	/**
-	 * Channels for the elevator's left arm solenoid forward thing.
-	 */
-	public final int ELEVATOR_LEFT_ARM_SOLENOID_FWD;
-	
-	/**
-	 * Channels for the elevator's left arm solenoid reverse thing.
-	 */
-	public final int ELEVATOR_LEFT_ARM_SOLENOID_REV;
-	
-	/**
-	 * Channels for the elevator's right solenoid forward thing.
-	 */
-	public final int ELEVATOR_RIGHT_ARM_SOLENOID_FWD;
-	
-	/**
-	 * Channels for the elevator's right solenoid reverse thing.
-	 */
-	public final int ELEVATOR_RIGHT_ARM_SOLENOID_REV;
-	
-	/**
-	 * Channels for the elevator's brake solenoid forward thing.
-	 */
-	public final int ELEVATOR_BRAKE_LEFT_SOLENOID_FWD;
-	
-	/**
-	 * Channels for the elevator's brake solenoid reverse thing.
-	 */
-	public final int ELEVATOR_BRAKE_LEFT_SOLENOID_REV;
-	
-	/**
-	 * Channels for the elevator's brake solenoid forward thing.
-	 */
-	public final int ELEVATOR_BRAKE_RIGHT_SOLENOID_FWD;
-	
-	/**
-	 * Channels for the elevator's brake solenoid reverse thing.
-	 */
-	public final int ELEVATOR_BRAKE_RIGHT_SOLENOID_REV;
 
-	/**
-	 * Channel A for the elevator's encoder.
-	 */
-	public final int ELEVATOR_ENCODER_CHANNEL_A;
-	
-	/**
-	 * Channel B for the elevator's encoder.
-	 */
-	public final int ELEVATOR_ENCODER_CHANNEL_B;
-	
-	public final double ELEVATOR_P;
-	public final double ELEVATOR_I;
-	public final double ELEVATOR_D;
-	
-	public final int ELEVATOR_LEFT_MOTOR;
-	public final int ELEVATOR_RIGHT_MOTOR;
-	
 	//============================Drive Constants=======================
 	/**
 	 * motor controller channel for the left 1 drive motor
@@ -137,35 +60,7 @@ public final class RobotMap {
 	public final double DRIVE_D;
 	
 	public final int DRIVE_MAX_RATE;
-	//===========================Intake constants========================
-	/**
-	 * Channel for the intake's left limit switch.
-	 */
-	public final int INTAKE_LEFT_LIMIT;
-	
-	/**
-	 * Channel for the intake's right limit switch.
-	 */
-	public final int INTAKE_RIGHT_LIMIT;
-	
-	/**
-	 * Channel for the intake's left motor.
-	 */
-	public final int INTAKE_LEFT_MOTOR;
-	
-	/**
-	 * Channel for the intake's right motor.
-	 */
-	public final int INTAKE_RIGHT_MOTOR;
-	
-	public final int INTAKE_LSOLENOID_FORWARD;
-	
-	public final int INTAKE_LSOLENOID_REVERSE;
-	
-	public final int INTAKE_RSOLENOID_FORWARD;
-	
-	public final int INTAKE_RSOLENOID_REVERSE;
-	
+
 	//===========================Controller Ports======================
 	/**
 	 * Joystick port for Joystick 1
@@ -207,6 +102,19 @@ public final class RobotMap {
 		this.DRIVE_R1 = 2;
 		this.DRIVE_R2 = 3;
 		
+		this.DRIVE_ENCODER_RA = 0;
+		this.DRIVE_ENCODER_RB = 1;
+		this.DRIVE_ENCODER_LA = 2;
+		this.DRIVE_ENCODER_LB = 3;
+		
+		this.DRIVE_MAX_RATE = 512;
+		
+		this.DRIVE_P = 0.05;
+		this.DRIVE_I = 0;
+		this.DRIVE_D = 0;
+		
+		
+		/*
 		this.ELEVATOR_TOP_LIMIT = 0;
 		this.ELEVATOR_BOTTOM_LIMIT = 1;
 		this.ELEVATOR_LEFT_LIMIT = 2;
@@ -230,21 +138,14 @@ public final class RobotMap {
 
 		this.ELEVATOR_LEFT_MOTOR = 0;
 		this.ELEVATOR_RIGHT_MOTOR = 1;
+		*/
 		
-		this.DRIVE_ENCODER_RA = 0;
-		this.DRIVE_ENCODER_RB = 1;
-		this.DRIVE_ENCODER_LA = 2;
-		this.DRIVE_ENCODER_LB = 3;
 		
-		this.DRIVE_MAX_RATE = 512;
-		
-		this.DRIVE_P = 0.05;
-		this.DRIVE_I = 0;
-		this.DRIVE_D = 0;
-		
+		/*
 		this.INTAKE_LEFT_LIMIT = 0;
 		this.INTAKE_RIGHT_LIMIT = 1;
 		this.INTAKE_LEFT_MOTOR = 2;
 		this.INTAKE_RIGHT_MOTOR = 3;
+		*/
 	}//end RobotMap()
 }//end class
